@@ -12,4 +12,14 @@ package frc.robot;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants {}
+public final class Constants {
+  /** Amount the arm joystick has to be moved away from center before the arm will start moving */
+  public static final double ARM_JOYSTICK_DEADBAND = .05;
+  /** How quickly the arm will change position when controlled with the joystick */
+  public static final double ARM_JOYSTICK_SPEED = 15;
+
+  /** How quickly the drive will move forward/backward when controlled with the joystick */
+  public static final double DRIVE_FORWARD_SCALE = 0.1;
+  /** How quickly the drive will turn left/right when controlled with the joystick */
+  public static final double DRIVE_STEER_SCALE = 0.1;
+}
